@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+    </style>
+
+    <title> Rock Paper Scissor Game</title>
+</head>
+<script>
+</script>
+
+<body>
+    <p>Rock-Paper-Scissor Game</p>
+    <button onclick="
+    const userSelection='Rock';
+    let Computerchoice='';
+    const randomValue = Math.random();
+    if(randomValue <=0.33){
+        Computerchoice ='Rock';
+    } else if(randomValue<=0.66 && randomValue>0.33){
+        Computerchoice='Paper';
+    }
+    else if (randomValue>0.66 && randomValue<=1){
+        Computerchoice='Scissor';
+    }
+
+    if (userSelection===Computerchoice){
+         document.getElementById('result').innerText=`Computer choose ${Computerchoice} Its a TIE!`;
+    }
+    else if(Computerchoice==='Paper'){
+     document.getElementById('result').innerText=`Computer choose ${Computerchoice} You Lose batter luck next time`;
+    }
+    else if(Computerchoice==='Scissor'){
+         document.getElementById('result').innerText=`Computer choose ${Computerchoice} Great,You Win!`;
+    }
+    " ;>Rock</button>
+
+
+    <button onclick="
+    const userSelection='Paper';
+    let Computerchoice='';
+    const randomValue = Math.random();
+    if(randomValue <=0.33){
+        Computerchoice ='Rock';
+    } else if(randomValue<=0.66 && randomValue>0.33){
+        Computerchoice='Paper';
+    }
+    else if (randomValue>0.66 && randomValue<=1){
+        Computerchoice='Scissor';
+    }
+
+    if (userSelection===Computerchoice){
+        document.getElementById('result').innerText=`Computer choose ${Computerchoice} Its a TIE!`;
+    }
+    else if(Computerchoice==='Scissor'){
+    document.getElementById('result').innerText=`Computer choose ${Computerchoice} You Lose batter luck next time`;
+    }
+    else if(Computerchoice==='Rock'){
+        document.getElementById('result').innerText= `Computer choose ${Computerchoice} Great,You Win!`;
+    }
+    " ;>Paper</button>
+
+
+    <button onclick="
+    const userSelection='Scissor';
+    let Computerchoice='';
+    const randomValue = Math.random();
+    if(randomValue <=0.33){
+        Computerchoice ='Rock';
+    } else if(randomValue<=0.66 && randomValue>0.33){
+        Computerchoice='Paper';
+    }
+    else if (randomValue>0.66 && randomValue<=1){
+        Computerchoice='Scissor';
+    }
+
+    if (userSelection===Computerchoice){
+        document.getElementById('result').innerText=`Computer choose ${Computerchoice} Its a TIE!`;
+    }
+    else if(Computerchoice==='Rock'){
+    document.getElementById('result').innerText=`Computer choose ${Computerchoice} You Lose batter luck next time`;
+    }
+    else if(Computerchoice==='Paper'){
+        document.getElementById('result').innerText=`Computer choose ${Computerchoice} Great,You Win!`;
+    }
+    " ;>Scissor</button>
+
+    <p id="result"></p>
+
+</body>
+
+</html>
